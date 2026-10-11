@@ -1,0 +1,41 @@
+# ~/.config/starship.toml
+
+# 1. Format de gauche
+format = """
+[  $username ](bg:#ffb9c3 fg:#000000)\
+[](bg:#ffdac1 fg:#ffb9c3)\
+$directory\
+[](bg:#baddfa fg:#ffdac1)\
+$time\
+[](fg:#baddfa)\
+$line_break\
+$character"""
+
+# 2. Format de droite
+right_format = """$cmd_duration"""
+
+add_newline = true
+
+[username]
+show_always = true
+style_user = "bg:#ffb9c3 fg:#000000 bold"
+format = '[$user]($style)'
+
+[directory]
+style = "bg:#ffdac1 fg:#000000 bold"
+format = "[ $path ]($style)"
+truncation_length = 3
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "bg:#baddfa fg:#000000 bold"
+format = '[  $time ]($style)'
+
+[cmd_duration]
+min_time = 0
+format = "took [$duration](bold yellow)"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
