@@ -1,36 +1,26 @@
-cat << 'EOF' > README.md
-# Dotfiles Fedora — Minimal & Pastel (KISS)
+# 🪐 Dotfiles Fedora — Minimal & Pastel (KISS)
+
+[![OS](https://img.shields.io/badge/OS-Fedora%20Linux-51A2DA?logo=fedora&logoColor=white)](https://fedoraproject.org/)
+[![Shell](https://img.shields.io/badge/Shell-Zsh-black?logo=gnubash&logoColor=white)](https://www.zsh.org/)
+[![Prompt](https://img.shields.io/badge/Prompt-Starship-DD0B78?logo=starship&logoColor=white)](https://starship.rs/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+Configuration épurée, performante et maintenable pour environnement Linux axée sur le principe KISS (*Keep It Simple, Stupid*).
+
+---
+
+## 📸 Aperçu
 
 ![Aperçu du Prompt](preview.png)
 
-Configuration soignée, ergonomique et épurée pour un terminal moderne sous **Fedora Linux**.
-
 ---
 
-## 🎨 Caractéristiques visuelles
+## 📁 Structure du dépôt
 
-* **Moteur de prompt :** [Starship](https://starship.rs/)
-* **Style :** Bandeau capsule pastel sur 2 lignes (doux pour les yeux)
-* **Palette :**
-  * Rose pastel (`#ffb9c3`) : Identité Fedora et utilisateur
-  * Pêche (`#ffdac1`) : Répertoire courant et branche Git
-  * Bleu ciel (`#baddfa`) : Horloge
-* **Indicateurs intelligents :**
-  * Durée d'exécution à droite (`took Xs`) affichée uniquement si la commande dépasse 2 secondes.
-  * Chevron de frappe coloré selon l'état : vert (succès) ou rouge (erreur / interruption).
-
----
-
-## ⚙️ Prérequis
-
-* **Émulateur :** GNOME Ptyxis
-* **Police requise :** `JetBrainsMono Nerd Font` (style **Regular**, 14pt)  
-  *⚠️ Ne pas utiliser la variante se terminant par `Mono` afin d'éviter les espacements anormaux.*
-
----
-
-## 🚀 Installation rapide
-
-1. Cloner le dépôt :
-   ```bash
-   git clone [https://github.com/QuoVeridis/dotfiles.git](https://github.com/QuoVeridis/dotfiles.git) ~/dotfiles
+```text
+dotfiles/
+├── starship/
+│   └── starship.toml    # Configuration du prompt (capsule bicolore & timer)
+├── preview.png          # Capture de démonstration du terminal
+├── LICENSE              # Licence libre MIT
+└── README.md            # Spécifications et guide de déploiement
