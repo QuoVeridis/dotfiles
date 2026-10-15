@@ -1,4 +1,4 @@
-# Dotfiles — Environnement Fedora Linux, ZSH, Starship, Tmux (KISS & Moderne)
+# Dotfiles Fedora minimalistes (KISS) : socle Zsh, prompt Starship, Tmux et Neovim modulaire (Lazy.nvim / Lua). Épuré, performant et élégant.
 
 [![OS Fedora Linux](https://img.shields.io/badge/OS-Fedora%20Linux-51A2DA?logo=fedora&logoColor=white)](https://getfedora.org/)
 [![Shell Zsh](https://img.shields.io/badge/Shell-Zsh-black?logo=gnubash&logoColor=white)](https://www.zsh.org/)
